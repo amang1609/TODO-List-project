@@ -14,6 +14,7 @@ todoButton.addEventListener("click", function (e) {
     const todoTask = document.createElement("li");
     todoTask.classList.add("todo-item");
     todoTask.innerText = todoInput.value;
+    todoInput.value = "";
 
     //create a check button
     const completeButton = document.createElement("button");
