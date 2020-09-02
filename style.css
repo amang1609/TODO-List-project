@@ -32,13 +32,14 @@ form {
 }
 
 .todo-button {
-    color: #fda085;
+    color: #ff6f47;
     background: white;
+    cursor: pointer;
     transition: all .4s ease;
 }
 
 .todo-button:hover {
-    background: #fda085;
+    background: #ff6f47;
     color: white;
 }
 
@@ -90,7 +91,7 @@ form {
 }
 
 .delete {
-    transform: translateX(10rem);
+    transform: translateX(20rem);
     opacity: 0;
 }
 
@@ -98,3 +99,36 @@ form {
     text-decoration: line-through;
     opacity: 0.5;
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none; 
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    height: 2rem;
+  }
+
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .3rem;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
+  }
